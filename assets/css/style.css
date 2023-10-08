@@ -1,0 +1,110 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+header {background-color: #f9f9f9;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo img {
+    max-width: 100%;
+
+}
+
+.nav ul {
+    display: flex;
+    list-style-type: none;
+}
+
+.nav ul ul {
+    display: none;
+    position: absolute;
+    background-color: #ffff;
+    width: 160px;
+ 
+}
+
+.nav ul ul ul {
+    position: absolute;
+    top: 0;
+    left: 100%;
+}
+
+.nav ul li {
+    position: relative;
+    margin-right: 20px;
+}
+
+.nav ul li:hover > ul {
+    display: block;
+}
+
+.Product{display: inline-block;
+justify-content: space-between;
+align-self: normal;}
+
+
+.nav ul ul li:hover {
+    background-color: #ccc;
+}
+
+#search {
+    display: flex;
+    align-items: center;
+}
+
+.search-button {
+    border: none;
+    background: none;
+    font-size: 1.5em;
+    cursor: pointer;
+}
+
+.Product{display: inline-block;}
+
+.cart-button {
+    border: none;
+    background: none;
+    font-size: 1.5em;
+    cursor: pointer;
+    margin-left: 10px;
+}
+.list .item::after {
+    content: "";
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #000;
+    transition: width 0.5s;
+}
+
+.list .item:hover::after {
+    width: 100%;
+}
+
+.list .head::after {
+    content: "";
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #000;
+    transition: width 0.5s;
+}
+
+.list .head:hover::after {
+    width: 100%;
+}
+
+.header{
+    cursor: pointer;
+}
+.nav{cursor: pointer;}
